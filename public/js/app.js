@@ -25,7 +25,6 @@ const search = () => {
                     news += `
                  <div>
                  <span>${i + 1}:</span> 
-                    
                     <span class="teal-text">Title: </span>
                     <span>${data.news[i].title}</span>
                     </div>
@@ -43,7 +42,7 @@ const search = () => {
                 document.getElementById("newsarray").innerHTML = news
             }
             else{
-                document.getElementById("e").innerHTML = data.error;
+                document.getElementById("newsarray").innerHTML = "<span class='red-text'>Sorry, No Top News! </span>";
             }
         }
         else {

@@ -34,7 +34,6 @@ const getData = (check, city) => {
                         }
                         else {
                             check.send(data)
-                            check.send({error:  "Sorry, No Top News"})
                         }
                     }
                     else {
