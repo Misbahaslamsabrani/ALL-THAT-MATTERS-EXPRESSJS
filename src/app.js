@@ -24,7 +24,8 @@ app.get("/search", (req, res) => {
     else {
         var ipgeolocationApi = new IPGeolocationAPI("85c4e3caca5c4d8abcd4bca8173284d7", false);
         ipgeolocationApi.getGeolocation((res1) => {
-            if (res1) {
+            if(res1) {
+                console.log(res1.city)
                 getData(res, res1.city)
             }
             else {
