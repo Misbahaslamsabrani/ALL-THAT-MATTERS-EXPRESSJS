@@ -33,6 +33,7 @@ const getData = (check, city) => {
                             check.send(data)
                         }
                         else {
+                            check.send(data)
                             check.send({error:  "Sorry, No Top News"})
                         }
                     }
