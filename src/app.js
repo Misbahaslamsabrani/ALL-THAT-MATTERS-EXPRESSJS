@@ -33,7 +33,7 @@ app.get("/search", (req, res) => {
         })
     }
 })
-const port = 3030
+const port = process.env.PORT || 2000
 app.listen(port, () => {
     console.log(`Server running on port: ${port}`)
 })

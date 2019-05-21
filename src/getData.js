@@ -42,11 +42,11 @@ const getData = (check, city) => {
                 })
             }
             else {
-                check.send({error : "Sorry, something went wrong"})
+                check.send({error: "Sorry, something went wrong"})
             }
         }
         else {
-            check.send({error : "Sorry, something went wrong"})
+            check.send({error: "Sorry, something went wrong"})
         }
     })
 }
